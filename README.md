@@ -4,7 +4,7 @@
    robin_arm_with_end_effector_ikfast_plugin:
     type: git
     url: https://github.com/additiveautomations/robin_arm_with_end_effector_ikfast_plugin.git
-    version: b3c4e5ba69721dce13f49f602048ab3252244764
+    version: b7973eeaf564806ee938a13528204b96ae89d657
 ```
 
 2. Import `make import-external-repos`
