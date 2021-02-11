@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<library path="lib/librobin_gp8_axia80_ee0_moveit_ikfast_plugin">
+  <class name="robin_gp8_axia80_ee0/IKFastKinematicsPlugin" type="robin_gp8_axia80_ee0::IKFastKinematicsPlugin" base_class_type="kinematics::KinematicsBase">
+    <description>IKFast61 plugin for closed-form kinematics of robin gp8_axia80_ee0</description>
+  </class>
+</library>

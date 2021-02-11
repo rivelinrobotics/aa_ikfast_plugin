@@ -1,13 +1,13 @@
 search_mode=OPTIMIZE_MAX_JOINT
 srdf_filename=robin.srdf
 robot_name_in_srdf=robin
-moveit_config_pkg=robin_moveit_config
-robot_name=robin
-planning_group_name=arm_with_end_effector
-ikfast_plugin_pkg=robin_arm_with_end_effector_ikfast_plugin
-base_link_name=robin_base_link
-eef_link_name=tool_tip
-ikfast_output_path=/home/aa-ros/checkout/tmp_ikfast_workspace/robin_arm_with_end_effector_ikfast_plugin/src/robin_arm_with_end_effector_ikfast_solver.cpp
+moveit_config_pkg=aa_moveit
+robot_name=motoman_gp8
+planning_group_name=arm_only
+ikfast_plugin_pkg=motoman_gp8_${planning_group_name}_ikfast_plugin
+base_link_name=${robot_name_in_srdf}_base_link
+eef_link_name=${robot_name_in_srdf}_tool0
+ikfast_output_path=$(pwd)/src/motoman_gp8_arm_only_ikfast_solver.cpp
 
 rosrun moveit_kinematics create_ikfast_moveit_plugin.py\
   --search_mode=$search_mode\
