@@ -1,4 +1,4 @@
-# IK Fast Plugin : Yaskawa Motoman GP8 + FT Sensor + ee0
+# IK Fast Plugin : Yaskawa Motoman GP8 + FT Sensor + End Effector
 1. Add the package to the `.external_repos.yaml` file in the main repository. Always pin a specific commit, don't use a branch unless the repository is owned by us.
 ```
    robin_arm_with_end_effector_ikfast_plugin:
