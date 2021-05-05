@@ -60,7 +60,7 @@ enum SEARCH_MODE
   OPTIMIZE_MAX_JOINT = 2
 };
 
-namespace motoman_gp8_arm_only
+namespace gp8
 {
 #define IKFAST_NO_MAIN  // Don't include main() from IKFast
 
@@ -1395,8 +1395,8 @@ void IKFastKinematicsPlugin::transformToChainFrame(const geometry_msgs::Pose& ik
   }
 }
 
-}  // namespace motoman_gp8_arm_only
+}  // namespace gp8
 
 // register IKFastKinematicsPlugin as a KinematicsBase implementation
 #include <pluginlib/class_list_macros.hpp>
-PLUGINLIB_EXPORT_CLASS(motoman_gp8_arm_only::IKFastKinematicsPlugin, kinematics::KinematicsBase);
+PLUGINLIB_EXPORT_CLASS(gp8::IKFastKinematicsPlugin, kinematics::KinematicsBase);

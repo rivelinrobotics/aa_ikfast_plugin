@@ -2,7 +2,7 @@
 <package format="2">
   <name>gp8_ikfast_plugin</name>
   <version>0.0.0</version>
-  <description>IKFast plugin for motoman_gp8</description>
+  <description>IKFast plugin for gp8</description>
   <license>BSD</license>
   <maintainer email="rob@todo.todo">rob</maintainer>
   <buildtool_depend>catkin</buildtool_depend>
