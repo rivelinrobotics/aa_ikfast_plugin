@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <package format="2">
-  <name>motoman_gp8_arm_only_ikfast_plugin</name>
+  <name>gp8_ikfast_plugin</name>
   <version>0.0.0</version>
   <description>IKFast plugin for motoman_gp8</description>
   <license>BSD</license>
@@ -19,6 +19,6 @@
   <exec_depend>liblapack-dev</exec_depend>
   <exec_depend>moveit_core</exec_depend>
   <export>
-    <moveit_core plugin="${prefix}/motoman_gp8_arm_only_moveit_ikfast_plugin_description.xml"/>
+    <moveit_core plugin="${prefix}/gp8_moveit_ikfast_plugin_description.xml"/>
   </export>
 </package>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<library path="lib/libmotoman_gp8_arm_only_moveit_ikfast_plugin">
+<library path="lib/libgp8_moveit_ikfast_plugin">
   <class name="motoman_gp8_arm_only/IKFastKinematicsPlugin" type="motoman_gp8_arm_only::IKFastKinematicsPlugin" base_class_type="kinematics::KinematicsBase">
     <description>IKFast61 plugin for closed-form kinematics of motoman_gp8 arm_only</description>
   </class>

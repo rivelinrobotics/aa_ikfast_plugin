@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.1.3)
-project(robin_gp8_for_toolchange_ikfast_plugin)
+project(gp8_ikfast_plugin)
 
 if(NOT "${CMAKE_CXX_STANDARD}")
   set(CMAKE_CXX_STANDARD 14)
@@ -22,8 +22,8 @@ include_directories(SYSTEM ${catkin_INCLUDE_DIRS})
 
 catkin_package()
 
-set(IKFAST_LIBRARY_NAME robin_gp8_for_toolchange_moveit_ikfast_plugin)
-add_library(${IKFAST_LIBRARY_NAME} src/robin_gp8_for_toolchange_ikfast_moveit_plugin.cpp)
+set(IKFAST_LIBRARY_NAME gp8_moveit_ikfast_plugin)
+add_library(${IKFAST_LIBRARY_NAME} src/gp8_ikfast_moveit_plugin.cpp)
 target_link_libraries(${IKFAST_LIBRARY_NAME} ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${LAPACK_LIBRARIES})
 # suppress warnings about unused variables in OpenRave's solver code
 target_compile_options(${IKFAST_LIBRARY_NAME} PRIVATE -Wno-unused-variable)
@@ -36,7 +36,7 @@ install(TARGETS
 
 install(
   FILES
-  robin_gp8_for_toolchange_moveit_ikfast_plugin_description.xml
+  gp8_moveit_ikfast_plugin_description.xml
   DESTINATION
   ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
