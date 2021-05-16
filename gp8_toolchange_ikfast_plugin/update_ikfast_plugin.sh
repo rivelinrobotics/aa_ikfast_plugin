@@ -3,11 +3,11 @@ srdf_filename=yaskawa.srdf
 robot_name_in_srdf=yaskawa
 moveit_config_pkg=yaskawa_moveit_config
 robot_name=yaskawa
-planning_group_name=gp8_for_toolchange
+planning_group_name=gp8_toolchange
 ikfast_plugin_pkg=gp8_toolchange_ikfast_plugin
 base_link_name=yaskawa_base_link
 eef_link_name=axia80_mate
-ikfast_output_path=/home/aa-ros/checkout/tmp_ikfast_workspace/gp8_toolchange_ikfast_plugin/src/gp8_toolchange_ikfast_solver.cpp
+ikfast_output_path=/home/rob/checkout/tmp_ikfast_workspace/gp8_toolchange_ikfast_plugin/src/yaskawa_gp8_toolchange_ikfast_solver.cpp
 
 rosrun moveit_kinematics create_ikfast_moveit_plugin.py\
   --search_mode=$search_mode\

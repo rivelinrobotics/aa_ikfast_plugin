@@ -13,7 +13,6 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   tf2_kdl
   tf2_eigen
-  eigen_conversions
 )
 find_package(LAPACK REQUIRED)
 
@@ -22,11 +21,11 @@ include_directories(SYSTEM ${catkin_INCLUDE_DIRS})
 
 catkin_package()
 
-set(IKFAST_LIBRARY_NAME gp8_toolchange_moveit_ikfast_plugin)
-add_library(${IKFAST_LIBRARY_NAME} src/gp8_toolchange_ikfast_moveit_plugin.cpp)
+set(IKFAST_LIBRARY_NAME yaskawa_gp8_toolchange_moveit_ikfast_plugin)
+add_library(${IKFAST_LIBRARY_NAME} src/yaskawa_gp8_toolchange_ikfast_moveit_plugin.cpp)
 target_link_libraries(${IKFAST_LIBRARY_NAME} ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${LAPACK_LIBRARIES})
 # suppress warnings about unused variables in OpenRave's solver code
-target_compile_options(${IKFAST_LIBRARY_NAME} PRIVATE -Wno-unused-variable)
+target_compile_options(${IKFAST_LIBRARY_NAME} PRIVATE -Wno-unused-variable -Wno-unused-parameter)
 
 install(TARGETS
   ${IKFAST_LIBRARY_NAME}
@@ -36,7 +35,7 @@ install(TARGETS
 
 install(
   FILES
-  gp8_toolchange_moveit_ikfast_plugin_description.xml
+  yaskawa_gp8_toolchange_moveit_ikfast_plugin_description.xml
   DESTINATION
   ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
