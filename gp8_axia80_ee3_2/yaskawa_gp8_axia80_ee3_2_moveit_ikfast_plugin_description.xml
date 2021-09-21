@@ -1,6 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<library path="lib/libyaskawa_gp8_axia80_ee3_2_moveit_ikfast_plugin">
-  <class name="yaskawa_gp8_axia80_ee3_2/IKFastKinematicsPlugin" type="yaskawa_gp8_axia80_ee3_2::IKFastKinematicsPlugin" base_class_type="kinematics::KinematicsBase">
-    <description>IKFast61 plugin for closed-form kinematics of yaskawa gp8_axia80_ee3_2</description>
-  </class>
-</library>
