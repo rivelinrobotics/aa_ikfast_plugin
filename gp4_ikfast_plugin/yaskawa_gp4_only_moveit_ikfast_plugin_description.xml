@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<library path="lib/libyaskawa_gp4_only_moveit_ikfast_plugin">
+  <class name="yaskawa_gp4_only/IKFastKinematicsPlugin" type="yaskawa_gp4_only::IKFastKinematicsPlugin" base_class_type="kinematics::KinematicsBase">
+    <description>IKFast61 plugin for closed-form kinematics of yaskawa gp4_only</description>
+  </class>
+</library>
