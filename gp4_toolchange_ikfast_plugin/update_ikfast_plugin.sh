@@ -7,7 +7,7 @@ planning_group_name=gp4_toolchange
 ikfast_plugin_pkg=gp4_toolchange_ikfast_plugin
 base_link_name=yaskawa_base_link
 eef_link_name=axia80_mate
-ikfast_output_path=/home/rob/checkout/tmp_ikfast_workspace/gp4_toolchange_ikfast_plugin/src/yaskawa_gp4_toolchange_ikfast_solver.cpp
+ikfast_output_path=/home/rob/checkout/external/src/aa_ikfast_plugin/gp4_toolchange_ikfast_plugin/src/yaskawa_gp4_toolchange_ikfast_solver.cpp
 
 rosrun moveit_kinematics create_ikfast_moveit_plugin.py\
   --search_mode=$search_mode\

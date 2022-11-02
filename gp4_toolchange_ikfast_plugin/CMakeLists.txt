@@ -31,7 +31,7 @@ install(TARGETS
 
 install(
   FILES
-        yaskawa_gp4_toolchange_moveit_ikfast_plugin_description.xml
+  yaskawa_gp4_toolchange_moveit_ikfast_plugin_description.xml
   DESTINATION
   ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
